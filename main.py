@@ -34,10 +34,6 @@ from sqlalchemy import JSON, Boolean, DateTime, ForeignKey, Integer, String, Tex
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, sessionmaker
 
 
-# ---------------------------------------------------------------------------
-# Configuration and database
-# ---------------------------------------------------------------------------
-
 DATABASE_URL = os.getenv("SMARTQUIZ_DATABASE_URL", "sqlite:///./smartquiz_single_file.db")
 JWT_SECRET = os.getenv("JWT_SECRET", "change-this-demo-secret-before-submission-please")
 JWT_ALGORITHM = "HS256"
